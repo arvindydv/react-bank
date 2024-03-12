@@ -1,0 +1,35 @@
+header{
+    padding: 1rem;
+    color: #ffffff;
+    background-color: #3d3df1;
+}
+
+#container{
+    display: flex;
+    padding: 2rem;
+}
+
+#data-container,#chart-container{
+    width: 50%;
+}
+
+#chart-container{
+    width: 50%;
+    height: 500px;
+}
+
+canvas{
+    width: 500px;
+    height: 500px;
+}
+
+@media screen and (max-width:768.5px) {
+    #container{
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    #data-container,#chart-container{
+        width: 100%;
+    }
+}
